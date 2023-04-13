@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+}
+
+.outer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 60rem;
+	width: 60rem;
+
+	border-radius: 50%;
+	border: 10px solid white;
+	
+}
+
+.inner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 57rem;
+	width: 57rem;
+	border-radius: 50%;
+	border: 4px solid black;
+	background-image: url(bg.png);
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 1.5rem;
+	width: 1.5rem;
+	background: #0b0b0b;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.center-second {
+	background: red;
+	height: 1.8rem;
+	width: 1.8rem;
+}
+
+.second-hand {
+	height: 30rem;
+	width: 0.5rem;
+	background: red;
+	transform: translateY(-4rem);
+}
+
+.minute-hand {
+	height: 0;
+	width: 2rem;
+	border-bottom: 28rem solid white;
+	border-right: 0.4rem solid transparent;
+	border-left: 0.4rem solid transparent;
+	transform: translateY(-9rem);
+}
+
+.hour-hand {
+	height: 0;
+	width: 2rem;
+	border-bottom: 24rem solid white;
+	border-right: 0.4rem solid transparent;
+	border-left: 0.4rem solid transparent;
+	transform: translateY(-3rem);
+}
+
+.segments {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	
+}
+
+.segment {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 27.8rem;
+	width: 0px;
+	background: green;
+	transform-origin: center top;
+}
+
+.mark {
+	height: 1.2rem;
+	width: 5px;
+	background: white;
+}
+
+.mark-hour {
+	height: 1.2rem;
+	transform: translateX(-2px);
+	width: 8px;
+}
+
+.num {
+	position: absolute;
+	top: 4.7rem;
+	left: 50%;
+	text-align: center;
+	line-height: 0;
+	font-size: 4rem;
+	font-weight: 700;
+	font-family: open sans;
+	color: white;
+}
